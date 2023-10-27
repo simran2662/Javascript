@@ -1,0 +1,32 @@
+<!-- Question:
+
+You have a webpage with two buttons, one with the ID "startButton" and another with the ID "stopButton." 
+You want to add event listeners to both buttons. When the "startButton" is clicked, you want to display the 
+message "Starting the process..." in a paragraph with the ID "status." When the "stopButton" is clicked, 
+you want to display the message "Stopping the process..." in the same paragraph. Write the JavaScript code
+ to achieve this functionality. -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Event Page</title>
+  </head>
+  <body>
+    <button id="startButton">Start Button</button>
+    <button id="stopButton">Stop Button</button>
+    <p id="output"></p>
+  </body>
+  <script>
+    const startButton = document.getElementById("startButton");
+    startButton.addEventListener('click', function () {
+      const output = document.getElementById("output");
+      output.textContent = "Starting the process";
+    });
+
+    const stopButton = document.getElementById("stopButton");
+    stopButton.addEventListener('click', function () {
+      const output1 = document.getElementById("output");
+      output1.textContent = "Stopping the process";
+    });
+  </script>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to my page</title>
+  </head>
+  <body>
+    <h2>Javascript ForEach method</h2>
+    <p id="demo"></p>
+    <!-- using forEach Method -->
+    <script>
+      // const numbers=[56,34,7,8,10,23];
+      // let txt="";
+      // numbers.forEach(myFunction);
+      // function myFunction(value,index,array){
+      //   txt=txt+value+"<br>";
+      //   document.getElementById("demo").innerHTML=txt;
+
+      // let nums=[10,20,30,40,50];
+      // let txt="";
+      // nums.forEach( (temp) =>{
+      //   txt=txt+temp+"<br>";
+      //   console.log(txt);
+      // });
+      // document.getElementById("demo").innerHTML=txt;
+
+
+      // print the even numbers
+      
+      let even=[2,5,7,9,0,3,1,11];
+      let txt="";
+      even.forEach(temp=>{
+        if(temp%2==0){
+          console.log(temp);
+          txt=txt+temp+"<br>";
+          document.getElementById("demo").innerHTML=txt;
+        }
+      });
+
+      
+      
+    </script>
+  </body>
+</html>

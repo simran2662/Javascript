@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      welcom to coding session
+    </title>
+  </head>
+  <body>
+    <h1>Write a program using filter</h1>
+    <p id="demo"></p>
+  </body>
+  <script>
+    // print the odd numbers using filter which return true and false
+    // let nums=[0,1,2,3,4,5,6,7,8,9];
+    // let txt="";
+    // nums.filter(temp=>{
+    //   if(temp%2!=0){
+    //     console.log(temp);
+    //     txt=txt+temp+"<br>";
+    //   }
+    //   document.getElementById("demo").innerHTML=txt;
+    // });
+
+
+
+    // print the original array double in output 
+
+  //   let x=[10,20,30,40,50];
+  //   let txt="";
+  //   x.map(temp => temp*2).forEach(temp =>{
+  //     console.log(temp);
+  //   txt += temp+"<br>";
+  //   });
+  //   document.getElementById("demo").innerHTML=txt;
+  // </script>
+
+
+    const companies=[
+    {company:"google",start:2000,end:900},
+    {company:"tcs",start:9876,end:8909}
+    ];
+    let txt="";
+    companies.forEach( function(comp,index){
+      console.log(comp);
+      txt += comp+"<br>";
+    });
+    document.getElementById("demo").innerHTML=txt;
+  </script>
+</html>

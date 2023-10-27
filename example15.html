@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      My Event Page
+    </title>
+  </head>
+  <body>
+    <p id="output"></p>
+    <button id="myButton" >Click Me!</button>
+
+    <script>
+      const button=document.getElementById("myButton");
+      button.addEventListener('click', function(){
+        const output=document.getElementById("output");
+        output.textContent="Hey simran!What's up?";
+      })
+    </script>
+  </body>
+</html>
